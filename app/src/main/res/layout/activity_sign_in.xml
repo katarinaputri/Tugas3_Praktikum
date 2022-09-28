@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignIn"
+    android:layout_marginLeft="24dp"
+    android:layout_marginRight="24dp"
+    android:layout_marginTop="90dp"
+    android:paddingBottom="200dp">
+
+    <TextView
+        android:id="@+id/wb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="Welcome back"
+        android:textColor="#313131"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/sitc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign in to continue"
+        android:fontFamily="@font/montserrat_light"
+        android:textSize="16dp"
+        android:layout_below="@+id/wb"
+        android:paddingBottom="48dp"
+        android:paddingTop="8dp"
+        android:textColor="#9b9b9b"/>
+
+    <TextView
+        android:id="@+id/tvu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:layout_below="@id/sitc"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20dp"
+        android:textColor="#313131" />
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your username"
+        android:textSize="13dp"
+        android:layout_below="@id/tvu"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:layout_below="@id/uname"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="20dp"
+        android:textColor="#313131"
+        android:paddingTop="8dp"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your password"
+        android:textSize="13dp"
+        android:layout_below="@id/tvp"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvfp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password"
+        android:layout_below="@id/pass"
+        android:layout_alignParentRight="true"
+        android:fontFamily="@font/montserrat_bold"
+        android:textSize="18sp"
+        android:textColor="#313131"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvfp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/button_red"
+        android:text="LOG IN"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</RelativeLayout>
